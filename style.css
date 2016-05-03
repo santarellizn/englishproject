@@ -75,7 +75,7 @@ td {
 }
 
 
-@media ( min-width: 550px){
+@media ( min-width: 700px){
 .nav {
     display:inline-block;
     position: absolute;
@@ -89,7 +89,7 @@ td {
 
 }
 
-@media ( max-width: 549px){
+@media ( max-width: 699px){
     .head {
         text-align:center;
     }
