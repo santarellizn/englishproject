@@ -103,7 +103,7 @@ td {
     img {
         display:none;
     }
-    .search {
+    #search {
         height:120%;
     }
 }
