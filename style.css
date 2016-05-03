@@ -103,6 +103,9 @@ td {
     img {
         display:none;
     }
+    .search {
+        height:120%;
+    }
 }
 
 img {
