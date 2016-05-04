@@ -27,10 +27,6 @@ form {
     text-align: center;
 }
 
-input {
-    margin-bottom:5px;
-}
-
 #form input {
     width:300px;
     text-align: center;
@@ -101,7 +97,7 @@ td {
     }
     input {
         display:block;
-        margin: auto;
+        margin: 10px auto;
         
     }
 
