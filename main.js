@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+    var fbRef = new Firebase('https://communityservice.firebaseio.com/');
 	// navbar
 	$('.loginpage').hide();
 	
@@ -36,16 +37,46 @@ $(document).ready(function(){
         $('table').hide();
         }
 	});
-
-    //login
-    var username = $('#username').text();
-    var password = $('#password').text();
-    $("#onform").submit(function(event) {
-        var creds = {
-				username: username,
-				password: password 
-
-			};
-		console.log(creds);
+    
+    //retrieval
+    
+    fbRef.child('csdata').on("child_added", function(snapshot, prevChildKey){
+        var entry = snapshot.val();
+        console.log(entry);
+        console.log(entry.name);
+        
+       var tabledata = '<tr> <td>' + entry.name + '</td> <td>' + entry.done + '</td> <td>' + entry.left + '</td> </tr>';
+        
+        $('table').append(tabledata);
+            
+            
+            
     });
+    
+    //adding
+    $("#addition").submit(function(event) {
+        
+        var name = $('#name').val();
+        var done = $('#done').val();
+        var left = $('#left').val();
+        
+        var data = {
+            name: name,
+            done: done,
+            left: left
+        };
+        
+        fbRef.child('csdata').push(data);
+        
+		
+	});
+	
+	//login 
+	$("#onlog").submit(function(event) {
+	   $(location).attr('href','http://www.example.com');
+	   console.log('success');
+	   
+	    
+	});
+
 });
