@@ -90,10 +90,6 @@ input {
     margin:0 auto;
 }
 
-img {
-    display:none;
-}
-
 }
 
 @media ( max-width: 699px){
@@ -107,6 +103,9 @@ img {
         display:block;
         margin: 0 auto;
     }
+    img {
+    display:none;
+}
 }
 
 img {
