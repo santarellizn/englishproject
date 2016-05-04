@@ -90,6 +90,10 @@ input {
     margin:0 auto;
 }
 
+img {
+    display:none;
+}
+
 }
 
 @media ( max-width: 699px){
