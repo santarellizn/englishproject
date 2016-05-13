@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Community Service Hours</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        
+        <meta name="google-signin-client_id" content="625635348892-qjqfg9hpffsp18tti17stu77inmp037q.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+        <script src="main.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+    var profile = googleUser.getBasicProfile();
+    var email = profile.getEmail();
+}
+
+</script>
+
+    </head>
+    <body>
+        <div class="head">
+        	<img src="http://athletics.mountainvistaonline.org/data/ORG000000/0000000016/img/logo.png" height="100px" width="200px"></img>
+            <h1>Community Service</h1>
+            <ul class="nav">
+                <li><a id="home">Home</a></li>
+                <li><a href="santarellizn.github.io/workspace/authorized.html"><div class="g-signin2" data-onsuccess="onSignIn"></a></div></li>
+                <li><a href="#" onclick="signOut();">Sign out</a></li>
+            </ul>
+        </div>
+	<br>
+	<div class="home">
+	<form id="form">
+		<input 
+			id="search" 
+			type="text" 
+			placeholder="Search by Hours or Name"
+			autofocus></input>
+	</form>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Hours Done</th>
+					<th>Hours Left</th>
+				
+				</tr>
+			</thead>
+			<tbody class="cstable">
+				
+			</tbody>
+			<p id="filter-count"></p>
+		</table>
+		</div>
+    </body>
+</html>
