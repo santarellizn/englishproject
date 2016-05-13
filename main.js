@@ -57,7 +57,6 @@ $(document).ready(function(){
         var tabledata = '<tr id="' + entry.id + '" > <td>' + entry.name + '</td> <td>' + entry.done + '</td> <td>' + entry.left + '</td> </tr>';
         
         console.log( entry.id );
-        console.log(email);
         
         $('table').append(tabledata);
             
