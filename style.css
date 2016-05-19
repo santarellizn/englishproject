@@ -58,7 +58,7 @@ h3 {
     font-weight: 500;
 }
 
-@media (max-width:700px){
+@media (max-width:950px){
     #nav {
         text-align:center;
         
@@ -89,7 +89,7 @@ h3 {
     }
 }
 
-@media (min-width:701px){
+@media (min-width:951px){
     #nav {
     position:absolute;
     right:0;
