@@ -1,73 +1,385 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Community Service Hours</title>
+        <title>Scrapbook Project</title>
         
         <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-        
-        <meta name="google-signin-client_id" content="625635348892-qjqfg9hpffsp18tti17stu77inmp037q.apps.googleusercontent.com">
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-        <script src="main.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500' rel='stylesheet' type='text/css'>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-    function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail());
-    var profile = googleUser.getBasicProfile();
-    var email = profile.getEmail();
-}
-
-</script>
-
     </head>
     <body>
-        <div class="head">
-        	<img src="http://athletics.mountainvistaonline.org/data/ORG000000/0000000016/img/logo.png" height="100px" width="200px"></img>
-            <h1>Community Service</h1>
-            <ul class="nav">
-                <li><a id="home">Home</a></li>
-                <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-                <li><a href="/workspace/authorized.html">Editing Page</a></li>
-                <li><a href="#" onclick="signOut();">Sign out</a></li>
-            </ul>
+        <div id="head">
+            
+            <h1>Wisdom Scrapbook</h1>
+            
+            <div id="nav">
+                <ul>
+                    <li id="givingli">Giving</li>
+                    <li id="workli">Work</li>
+                    <li id="crimeli">Crime & Punishment</li>
+                    <li id="freedomli">Freedom</li>
+                    <li id="friendshipli">Friendship</li>
+                    <li id="deathli">Death</li>
+                </ul>
+            </div>
+            
         </div>
-	<br>
-	<div class="home">
-	<form id="form">
-		<input 
-			id="search" 
-			type="text" 
-			placeholder="Search by Hours or Name"
-			autofocus></input>
-	</form>
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Hours Done</th>
-					<th>Hours Left</th>
-				
-				</tr>
-			</thead>
-			<tbody class="cstable">
-				
-			</tbody>
-			<p id="filter-count"></p>
-		</table>
-		</div>
+        
+        <div id="home">
+            <h2> This website was created for my English II Scrapbook Project that is on the six different topics and provides wisdom on those topics. <br> Click the links in the header to visit each of the six topics</h2>
+        </div>
+        
+        <div id="giving">
+            
+            <h2>Giving</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"One person gives freely, yet gains even more; another withholds unduly, but comes to poverty."</em> - Proverbs 11:24
+                </h3>
+                
+                <p id="explanation">
+                    This proverb is saying that when somebody gives something they receive even more, but when somebody doesn't give at all they lose everything.  People who give open themselves up to the graciousness of others and may recieve even more then they gave, this could even just be love or friendship.
+                    On the other hand, people that do not give cut themselves off and do not receive as much.
+                </p>
+                
+                <p id="example">
+                    This is seen in society because people teach the newer generations the things that humanity has learned through the education system and this leads to an educated society that can give back to and create things to take care of the generation that taught them. Through their giving of knowledge,
+                    the people that teach the future generations receive more than they even gave.
+                
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"You give but little when you give of your possessions. It is when you give of yourself that you truly give."</em> - Kalil Gibran
+                </h3>
+                
+                <p id="explanation">
+                    When you give material possessions to people, it only has a minor and short-lived effect on them. The things that truly has a big effect is when you give people 
+                    something that you know or a piece of your personality. 
+                </p>
+                
+                <p id="example">
+                    An example of this is the old saying, <em>"give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime"</em>, this means that giving the knowledge
+                    of how to fish is much more impactful than just giving him a possession because the knowledge allowed him to eat for his lifetime.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"He who supplies seed to the sower and bread for food will supply and multiply your seed for sowing and increase the harvest of your righteousness."</em> - Corinthians 9:10
+                </h3>
+                
+                <p id="explanation">
+                    This proverb explains how if you give your seeds to a farmer, he can create even more seed and also create food out of it. This now only applies to this situation though, the basic idea
+                    is that if you give the right tools to the right person there is mutual benefit. 
+                </p>
+                
+                <p id="example">
+                    An example of this is investing in startups. The investor has excess money and the startup has the potential to make everyone even more money. By giving to the startup, there is mutual
+                    financial benefit.
+                </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="work">
+            <h2>Work</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"All work and no play makes Jack a dull boy."</em> - English proverb
+                </h3>
+                
+                <p id="explanation">
+                    This proverb is trying to say that you need to balance out your work and play in order to become a good person. Too much work could make you an uninteresting person, but no work would make you a alzy person.
+                </p>
+                
+                <p id="example">
+                    An example of this is a woman who works 60 hour weeks and never has any time to go out or do anything. She is never exposed to the people and culture that surround her and therefore becomes
+                    dull and generally not a fun person to be around.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"What you can do today do not leave off for tomorrow."</em> - Serbian proverb
+                </h3>
+                
+                <p id="explanation">
+                    This Serbian proverb explains that you should always work at a job at this moment if possible and that you should not leave it off for tomorrow. Leaving off tasks till tomorrow causes
+                    laziness in society and if many people went at this practice, it could be devastating to society.
+                </p>
+                
+                <p id="example">
+                    This is seen in many student's lives. Procrastination is a problem that eventually becomes a habit and starts to ruin people's grades in school. If students always did projects at the first
+                    opportunity, they would do much better. 
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"None of us is as smart as all of us."</em> - Japenese Proverb
+                </h3>
+                
+                <p id="explanation">
+                    This Japenese proverb is explaining how working together is always better that working alone. This is because the collective creativity and intellect of a group is always greater than that 
+                    of an individual.
+                </p>
+                
+                <p id="example">
+                    An example of this is group projects at school. While there are always problems, the end product is always greater that what just one member of the group could ever have finished by themselves.
+                    
+                </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="crime">
+            <h2>Crime & Punishment</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"A single misdeed is permissible if the principal aim is right."</em> - Dostoevsky
+                </h3>
+                
+                <p id="explanation">
+                    This quote tells of how a crime can be justified if the intent was right. This means that, perhaps, the punishment should be lessened for crimes like this or the punishment should 
+                    be different.
+                </p>
+                
+                <p id="example">
+                    An example of this could be murdering who was going to murder two other people. Your intent was to save two lives, but in some places this would still be illegal, technically.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"The first and greatest punishment of the sinner is the conscience of the sin."</em> - Lucius Seneca
+                </h3>
+                
+                <p id="explanation">
+                    This quote explains how a punishment that a criminal must deal with is the guilt that he did the crime. In many cases, this is even greater that the jail time they serve because it tears them appart 
+                    emotionally for there whole lives, depending on the severity of the crime. 
+                </p>
+                
+                <p id="example">
+                    An example of this is an old person that is serving a life sentance for a murder he committed as a young person, 30 years ago. He has probably already stopped caring about being jailed and instead has the guilt 
+                    that he murdered someone. It sticks around forever and can eat a person up.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"Death is less bitter punishment than death's delay."</em> - Ovid
+                </h3>
+                
+                <p id="explanation">
+                    In many cases, giving the death sentance for a punishment is less harsh than the alternatives. This may be because there is extreme guilt eating at the person and that leads to the person 
+                    wanting to die.
+                </p>
+                
+                <p id="example">
+                    An example of this is a serial killer who has realized his mistakes. Living with his guilt for 30 years in jail would most likely be much easier than just getting the death sentance and dying.
+                    Also, the person could benefit society still if he is alive. 
+                </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="freedom">
+            <h2>Freedom</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"...for you can only be free when even the desire of seeking freedom becomes a harness to you..."</em> - Kalil Gibran
+                </h3>
+                
+                <p id="explanation">
+                    This quote from the Prophet explains how you can only truly be free when you desire it or work towards it. This could be because otherwise you have never known what it is like to 
+                    not be free and therefore never understand many parts of freedom.
+                </p>
+                
+                <p id="example">
+                    An example of this is people living in terrible poverty with many systems working against them from moving up. These people desire freedom from these systems and once they attain is they
+                    are truly free and maybe freer than many people ever will be.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"It's better to eat a mushroom in freedom than to eat meat in slavery."</em> - African proverb
+                </h3>
+                
+                <p id="explanation">
+                    This proverb shows how it is worth it to make sacrifices in order to gain or keep your freedom. This is because the benefits of freedom are so great that there are little things that can 
+                    be greater than it.
+                </p>
+                
+                <p id="example">
+                    An example of this is taxes in the free world. It is necessary to have them because when everyone is free, things become more expensive for the government to do. This results in taxes being collected
+                    in order to remain free.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"Those who deny freedom to others, deserve it not for themselves."</em> - Abraham Lincoln
+                </h3>
+                
+                <p id="explanation">
+                    This quote explains that people who keep freedom from others do not deserve it themselves. This may be because those who have experienced how great freedom is, but still keep it from others, are
+                    selfish and evil people.
+                </p>
+                
+                <p id="example">
+                    An example of this is slavemasters in the Southern United States before the Civil War. The slavemasters new what freedom was like, but they kept it from their slaves in greed and selfishness.
+                </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="friendship">
+            <h2>Friendship</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"Seek him (your friend) always with hours to live. For it is his to fill your need, but not your emptiness."</em> - A person
+                </h3>
+                
+                <p id="explanation">
+                    This quote from The Prophet tells of how you should not seek a friend with hours to kill, but to fill a need that you have. That is what a true friend is for, to experience hours to live.
+                </p>
+                
+                <p id="example">
+                    An example of this is traveling the world with a friend, you are filling a need to experience new things. This is contrary to just playing a game with a friend, those are just hours to kill.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"A dishonest man spreads strife, and a whisperer separates close friends."</em> - Proverbs 16:28
+                </h3>
+                
+                <p id="explanation">
+                    It is important to be open in a friendship and to not spread secrets or controversy. These whispers can destroy friendships and ruin the trust that is established by and within them.
+                </p>
+                
+                <p id="example">
+                    An example of this is spreading a rumour about a friend in school. This ruins the friendship and betrays the trust that was established by it.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"A friend is, as it were, a second self."</em> - Cicero
+                </h3>
+                
+                <p id="explanation">
+                    This proverb explains how a try friend is a nearly a second self. If you do not share many characteristics with a friend, maybe you are not really friends at all. This is what true friendship is like.
+                </p>
+                
+                <p id="example">
+                    An example of this is friends who have known each other since childhood and do many thing similarly, but also still gain from the friendship. These two people would be true friends.
+                </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="death">
+            <h2>Death</h2>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"All that live must die, passing through nature to eternity."</em> - William Shakespeare
+                </h3>
+                
+                <p id="explanation">
+                    Death is an inevitable occurance that should not be feared. Passing into eternity could mean going to heaven or it could just be having yourself lived on in the thoughts and memories
+                    of people for centuries, if you were important enough. 
+                </p>
+                
+                <p id="example">
+                    An example of this would be William Shakespeare. He definitly did die, but he is living on for eternity through the memory of himself and his work because he was that important for the 
+                    English language.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"Death, so called, is a thing which makes men weep, And yet a third of life is passed in sleep."</em> - Lord Byron
+                </h3>
+                
+                <p id="explanation">
+                    We should focus on living life rather than thinging about death. We find the end of live so tragic, but we do not see the waste of life, one third in sleep, as nearly as tragic. However, 
+                    we should because death makes every second of life matter even more.
+                </p>
+                
+                <p id="example">
+                    An example of this is a person who only thinks about life and does not let the fear of death hinder what they do in life. The fear of death would only motivate them to make every second of life 
+                    ever more enjoyable.
+                </p>
+                
+            </div>
+            
+            <div id="tidbit">
+                
+                <h3 id="quote">
+                    <em>"Remembering you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are always naked. There is no reason not to follow your heart."</em> - Steve Jobs
+                </h3>
+                
+                <p id="explanation">
+                    The inevitability of death should be a motivation to always follow your heart, because everything ends the same way anyway, and it means that you have nothing to lose. If you have nothing to lose then there is no point in holding yourself 
+                    back. 
+                </p>
+                
+                <p id="example">
+                    An example of this is the life of the man that said the quote, Steve Jobs, his small garage startup company has become one of the most influential and dominated companies in the tech market because he never held back. 
+                    
+                </p>
+                
+            </div>
+            
+        </div>
+        <h3> Zach Santarelli | Period 3 | English II</h3>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="main.js"></script>  
     </body>
+    
+    
 </html>
